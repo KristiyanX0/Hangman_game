@@ -4,6 +4,7 @@
 #include "regest_login.h"
 #include "random_word.h"
 #include "print_func.h"
+#include "Ranklist.h"
 #include <stdio.h>
 
 using std::string;
@@ -13,18 +14,12 @@ public:
 	void run();
 private:
 	unsigned int v;
-	string word_;
-	string cripted_;
 	unsigned int word_count = getword_count();
 	bool guessed_letters[26];
 	bool letters[26] = {false};
 
 	void mark_containing_letters(const string& str);
 	void cript_swap_letter(char l, string& cript, const string& word);
-
-	void ranklist_print();
-	void ranklist(const string& name);
-	void add_to_ranklist(const UserInfo& user);
 
 	void safeTo_file(const string&, const string& crtipted, const string& word, unsigned int v);
 	void open_saved_game(const string& name);

@@ -1,10 +1,7 @@
 ﻿  main.cpp
-  Ranklist.cpp
   repl.cpp
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(23,6): error C3861: 'add_to_ranklist': identifier not found
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(85,3): error C3861: 'ranklist_print': identifier not found
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(110,4): error C3861: 'ranklist': identifier not found
 C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(141,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(164,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(174,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
+  Hangman Game.vcxproj -> C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Debug\Hangman Game.exe

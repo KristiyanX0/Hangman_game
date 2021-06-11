@@ -33,6 +33,9 @@
     <ClCompile Include="print_func.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ranklist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="regest_login.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="print_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranklist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

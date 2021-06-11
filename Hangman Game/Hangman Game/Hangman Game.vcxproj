@@ -143,6 +143,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="print_func.cpp" />
     <ClCompile Include="random_word.cpp" />
+    <ClCompile Include="Ranklist.cpp" />
     <ClCompile Include="regest_login.cpp" />
     <ClCompile Include="repl.cpp" />
   </ItemGroup>
@@ -150,6 +151,7 @@
     <ClInclude Include="Helper_funk.h" />
     <ClInclude Include="print_func.h" />
     <ClInclude Include="random_word.h" />
+    <ClInclude Include="Ranklist.h" />
     <ClInclude Include="regest_login.h" />
     <ClInclude Include="repl.h" />
   </ItemGroup>
