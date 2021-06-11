@@ -6,7 +6,9 @@
 #include <string>
 using std::string;
 
-unsigned int random_num(unsigned int word_count);
-const string random_word(unsigned int word_count);
-
+class randomWord {
+public:
+	static unsigned int random_num(unsigned int word_count);
+	static const string random_word(unsigned int word_count);
+};
 #endif // !RANDOM_WORD

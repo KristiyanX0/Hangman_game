@@ -14,11 +14,13 @@ struct UserInfo {
 	int score = 0;
 };
 
-void input_UserInfo(string& name, string& password, string& emails);
-bool forgot_pass(string user_name, string email);
-bool is_it_registered(const UserInfo& user);
-void regest(const UserInfo& user);
-bool login(const UserInfo& user);
-void change_password(const UserInfo& user);
-
+class regest_login_system {
+public:
+	static void input_UserInfo(string& name, string& password, string& emails);
+	static bool forgot_pass(string user_name, string email);
+	static bool is_it_registered(const UserInfo& user);
+	static void regest(const UserInfo& user);
+	static bool login(const UserInfo& user);
+	static void change_password(const UserInfo& user);
+};
 #endif // _REGEST_LOGIN_

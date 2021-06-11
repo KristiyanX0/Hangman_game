@@ -1,5 +1,5 @@
 ﻿  repl.cpp
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(140,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(163,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(173,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(141,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(164,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Hangman Game\repl.cpp(174,20): warning C4018: '<': signed/unsigned mismatch
   Hangman Game.vcxproj -> C:\Users\User\Dropbox\My PC (DESKTOP-C5L093V)\Desktop\University\ООП\Проект - Hangman Game\Hangman Game\Debug\Hangman Game.exe

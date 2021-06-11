@@ -5,8 +5,10 @@
 #include <fstream>
 using std::string;
 
-void print_cript(const string& cript);
-void print_guessed_letters(const bool* guessed_letters);
-void print_word_list(const unsigned int word_count);
-
+class Print {
+public:
+	static void print_cript(const string& cript);
+	static void print_guessed_letters(const bool* guessed_letters);
+	static void print_word_list(const unsigned int word_count);
+};
 #endif // !PRINT_FUNC

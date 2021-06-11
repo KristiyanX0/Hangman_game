@@ -17,8 +17,8 @@ void repl::analyse_command(string &str) {
 				std::cin >> user.user_name;
 				std::cin >> user.email;
 				std::cin >> user.password;
-				if (!is_it_registered(user)) {
-					regest(user);
+				if (!regest_login_system::is_it_registered(user)) {
+					regest_login_system::regest(user);
 					Press_anyKey_to_continue("[ Successful registration! ]");
 					add_to_ranklist(user);
 				}
@@ -28,7 +28,7 @@ void repl::analyse_command(string &str) {
 			else if (str == "login") {
 				std::cin >> user.user_name;
 				std::cin >> user.password;
-				if (login(user)) {
+				if (regest_login_system::login(user)) {
 					Press_anyKey_to_continue("[ Successful login! ]");
 					while (str != "logout") {
 						system("cls");
@@ -50,10 +50,10 @@ void repl::analyse_command(string &str) {
 			else if (str == "forgotpass") {
 				std::cin >> user.user_name;
 				std::cin >> user.email;
-				if (forgot_pass(user.user_name, user.email)) {
+				if (regest_login_system::forgot_pass(user.user_name, user.email)) {
 					std::cout << "Enter new password: ";
 					std::cin >> user.password;
-					change_password(user);
+					regest_login_system::change_password(user);
 				}
 				else
 					Press_anyKey_to_continue("[ That's, not " + user.user_name + "'s email! ]");
@@ -78,7 +78,7 @@ void repl::login_command(string &name, string &str) {
 	else if (str == "exit")
 		std::exit(0);
 	else if (str == "printword") {
-		print_word_list(word_count);
+		Print::print_word_list(word_count);
 		Press_anyKey_to_continue("[ The list has " + std::to_string(word_count) + " words! ]");
 	}
 	else if (str == "ranklist") {
@@ -97,7 +97,7 @@ void repl::game(const string& name, unsigned v, bool saved, string cripted, stri
 	system("CLS");
 	char g;
 	if (saved) {
-		word = random_word(word_count);
+		word = randomWord::random_word(word_count);
 		mark_containing_letters(word);
 		cripted = cript(word);
 		reveal_Letter_by_index(cripted, word, 0);
@@ -106,12 +106,13 @@ void repl::game(const string& name, unsigned v, bool saved, string cripted, stri
 	while (true) {
 		if (is_it_won(cripted)) {
 			Press_anyKey_to_continue("[ GOOD JOB! ]");
+			Press_anyKey_to_continue("[ You guessed the word " + word + " ]");
 			ranklist(name);
 			break;
 		}
-		print_cript(cripted);	std::cout << std::endl << std::endl;
+		Print::print_cript(cripted);	std::cout << std::endl << std::endl;
 		printHangman(v);	std::cout << std::endl;
-		print_guessed_letters(guessed_letters);		std::cout << std::endl;
+		Print::print_guessed_letters(guessed_letters);		std::cout << std::endl;
 		std::cout << "Guess letter -> ";	std::cin >> g;
 		if (g == '#') {
 			safeTo_file(name, cripted, word, v);
